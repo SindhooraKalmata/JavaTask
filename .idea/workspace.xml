@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53f5fc7-a0c1-4ead-a6bc-f00e8338e539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritence.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xworkz/internal/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xworkz/internal/AnimalRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xworkz/internal/Horse.java" afterDir="false" />
-    </list>
+    <list default="true" id="b53f5fc7-a0c1-4ead-a6bc-f00e8338e539" name="Changes" comment="inheritance" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +60,20 @@
       <option name="presentableId" value="Default" />
       <updated>1743600840233</updated>
     </task>
+    <task id="LOCAL-00001" summary="inheritance">
+      <option name="closed" value="true" />
+      <created>1743611469180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743611469180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="inheritance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
