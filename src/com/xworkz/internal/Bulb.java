@@ -1,9 +1,9 @@
 package com.xworkz.internal;
 
-import com.xworkz.external.Bird;
+import com.xworkz.external.Light;
 
-public class Crow extends Bird {
-    public Crow() {
+public class Bulb extends Light {
+    public Bulb() {
         super();
         System.out.println("no args const of Crow");
     }
