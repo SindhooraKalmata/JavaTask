@@ -1,6 +1,6 @@
 package com.xworkz.external;
 
-import com.xworkz.internal.Rose;
+import com.xworkz.external.internal.Rose;
 
 public class Tree {
     public Tree() {
