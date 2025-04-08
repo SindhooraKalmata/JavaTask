@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Bird;
+import com.xworkz.external.casting.BirdCast;
 import com.xworkz.external.internal.Crow;
 
 public class BirdRunner {
@@ -32,5 +33,17 @@ public class BirdRunner {
         bird3.colour();
         bird3.gender();
         bird3.age();
+
+        Crow crow=new Crow();
+        crow.age();
+        crow.colour();
+        crow.weight();
+        crow.height();
+        crow.gender();
+
+        BirdCast birdCast=new BirdCast();
+        birdCast.apply(bird);
+        birdCast.apply(crow);
     }
+
 }

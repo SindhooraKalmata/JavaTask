@@ -1,6 +1,8 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Bus;
+import com.xworkz.external.casting.BusCast;
+import com.xworkz.external.internal.SchoolBus;
 
 public class BusRunner {
     public static void main(String[] args) {
@@ -31,5 +33,17 @@ public class BusRunner {
         bus3.eveningArrivalTime();
         bus3.morningArrivalTime();
         bus3.schoolName();
+
+        SchoolBus schoolBus=new SchoolBus();
+        schoolBus.speed();
+        schoolBus.busType();
+        schoolBus.eveningArrivalTime();
+        schoolBus.wheels();
+        schoolBus.schoolName();
+        schoolBus.morningArrivalTime();
+
+        BusCast busCast=new BusCast();
+        busCast.apply(bus);
+        busCast.apply(schoolBus);
     }
 }

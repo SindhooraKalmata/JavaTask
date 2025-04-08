@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Bar;
+import com.xworkz.external.casting.BarCast;
 import com.xworkz.external.internal.SportsBar;
 
 public class BarRunner {
@@ -32,5 +33,16 @@ public class BarRunner {
         bar3.offerSeating();
         bar3.maintainHygiene();
         bar3.operateLateNight();
+
+        SportsBar sportsBar=new SportsBar();
+        sportsBar.closed();
+        sportsBar.maintainHygiene();
+        sportsBar.offerSeating();
+        sportsBar.operateLateNight();
+        sportsBar.playMusic();
+
+        BarCast barCast=new BarCast();
+        barCast.apply(bar);
+        barCast.apply(sportsBar);
     }
     }

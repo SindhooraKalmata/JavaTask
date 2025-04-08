@@ -1,4 +1,5 @@
 package com.xworkz.external.main;
+import com.xworkz.external.casting.CreamCast;
 import com.xworkz.external.internal.ChocolateCream;
 import com.xworkz.external.Cream;
 
@@ -34,6 +35,14 @@ public class CreamRunner {
         cream3.soothingEffect();
         cream3.packaging();
 
+        ChocolateCream chocolateCream=new ChocolateCream();
+        chocolateCream.spread();
+        chocolateCream.applyCream();
+        chocolateCream.packaging();
+        chocolateCream.provideMoisture();
 
+        CreamCast creamCast=new CreamCast();
+        creamCast.apply(cream);
+        creamCast.apply(chocolateCream);
     }
 }

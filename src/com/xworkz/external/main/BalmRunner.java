@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Balm;
+import com.xworkz.external.casting.BalmCast;
 import com.xworkz.external.internal.ZanduBalm;
 
 public class BalmRunner {
@@ -32,5 +33,16 @@ public class BalmRunner {
         balm3.size();
         balm3.balmName();
         balm3.cost();
+
+        ZanduBalm zanduBalm=new ZanduBalm();
+        zanduBalm.balmType();
+        zanduBalm.balmColour();
+        zanduBalm.balmName();
+        zanduBalm.cost();
+        zanduBalm.size();
+
+        BalmCast balmCast=new BalmCast();
+        balmCast.apply(balm);
+        balmCast.apply(zanduBalm);
     }
 }

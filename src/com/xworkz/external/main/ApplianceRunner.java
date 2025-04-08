@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Appliance;
+import com.xworkz.external.casting.ApplianceCast;
 import com.xworkz.external.internal.Television;
 
 public class ApplianceRunner {
@@ -33,5 +34,15 @@ public class ApplianceRunner {
         appliance3.cost();
         appliance3.brand();
 
+        Television television=new Television();
+        television.width();
+        television.pieces();
+        television.cost();
+        television.height();
+        television.brand();
+
+        ApplianceCast applianceCast=new ApplianceCast();
+        applianceCast.works(appliance);
+        applianceCast.works(television);
     }
 }

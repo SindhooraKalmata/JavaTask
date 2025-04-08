@@ -3,7 +3,7 @@ package com.xworkz.external.main;
 import com.xworkz.external.Mobile;
 import com.xworkz.external.internal.Smartphone;
 
-public class MobileRunner {
+public class MobileRunner{
 
     public static void main(String[] args) {
         System.out.println("Basic Mobile Functions");
@@ -37,3 +37,4 @@ public class MobileRunner {
 
     }
 }
+

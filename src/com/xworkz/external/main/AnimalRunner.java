@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Animal;
+import com.xworkz.external.casting.AnimalCast;
 import com.xworkz.external.internal.Horse;
 
 public class AnimalRunner {
@@ -32,5 +33,17 @@ public class AnimalRunner {
         animal3.colour();
         animal3.gender();
         animal3.age();
+
+        Horse horse=new Horse();
+        horse.runs();
+        horse.age();
+        horse.height();
+        horse.colour();
+        horse.gender();
+        horse.weight();
+
+        AnimalCast animalCast=new AnimalCast();
+        animalCast.sounds(animal);
+        animalCast.sounds(horse);
     }
 }

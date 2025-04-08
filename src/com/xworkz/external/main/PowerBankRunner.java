@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.PowerBank;
+import com.xworkz.external.casting.PowerBankCast;
 import com.xworkz.external.internal.Anker;
 public class PowerBankRunner {
     public static void main(String[] args) {
@@ -18,5 +19,16 @@ public class PowerBankRunner {
         powerBank1.recharge();
         powerBank1.wire();
         powerBank1.connect();
+
+        Anker anker=new Anker();
+        anker.charge();
+        anker.wire();
+        anker.type();
+        anker.connect();
+        anker.recharge();
+
+        PowerBankCast powerBankCast=new PowerBankCast();
+        powerBankCast.cost(anker);
+        powerBankCast.cost(powerBank);
     }
 }

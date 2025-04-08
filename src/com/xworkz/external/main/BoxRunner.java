@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 
+import com.xworkz.external.casting.BoxCast;
 import com.xworkz.external.internal.CardboardBox;
 import com.xworkz.external.Box;
 
@@ -32,5 +33,16 @@ public class BoxRunner {
         box3.storeItems();
         box3.checkSize();
         box3.moveBox();
+
+        CardboardBox cardboardBox=new CardboardBox();
+        cardboardBox.closeBox();
+        cardboardBox.breaks();
+        cardboardBox.openBox();
+        cardboardBox.moveBox();
+        cardboardBox.checkSize();
+
+        BoxCast boxCast=new BoxCast();
+        boxCast.apply(box);
+        boxCast.apply(cardboardBox);
     }
 }

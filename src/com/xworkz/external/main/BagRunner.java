@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Bag;
+import com.xworkz.external.casting.BagCast;
 import com.xworkz.external.internal.SchoolBag;
 
 public class BagRunner {
@@ -33,5 +34,17 @@ public class BagRunner {
         bag3.zipBag();
         bag3.openBag();
         bag3.checkCapacity();
+
+        SchoolBag schoolBag=new SchoolBag();
+        schoolBag.buy();
+        schoolBag.carryBag();
+        schoolBag.zipBag();
+        schoolBag.openBag();
+        schoolBag.checkCapacity();
+        schoolBag.storeItems();
+
+        BagCast bagCast=new BagCast();
+        bagCast.apply(bag);
+        bagCast.apply(schoolBag);
     }
 }

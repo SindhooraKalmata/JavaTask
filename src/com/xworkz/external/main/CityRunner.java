@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.City;
+import com.xworkz.external.casting.CityCast;
 import com.xworkz.external.internal.Bangalore;
 
 public class CityRunner {
@@ -18,5 +19,9 @@ public class CityRunner {
         bangalore.travel();
         bangalore.trees();
         bangalore.population();
+
+        CityCast cityCast=new CityCast();
+        cityCast.apply(city1);
+        cityCast.apply(bangalore);
     }
 }

@@ -7,4 +7,32 @@ public class Bulb extends Light {
         super();
         System.out.println("no args const of Crow");
     }
+
+    @Override
+    public void cost() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void pieces() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void size() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void colour() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void totalCost() {
+        System.out.println("Running from child");
+    }
+    public void breaks(){
+        System.out.println("Running from child");
+    }
 }

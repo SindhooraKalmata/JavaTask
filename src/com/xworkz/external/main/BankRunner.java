@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.Bank;
+import com.xworkz.external.casting.BankCast;
 import com.xworkz.external.internal.DigitalBank;
 public class BankRunner {
     public static void main(String[] args) {
@@ -31,5 +32,15 @@ public class BankRunner {
         bank3.provideLoan();
         bank3.closeAccount();
 
+        DigitalBank digitalBank=new DigitalBank();
+        digitalBank.closed();
+        digitalBank.closeAccount();
+        digitalBank.openAccount();
+        digitalBank.provideLoan();
+        digitalBank.depositMoney();
+
+        BankCast bankCast=new BankCast();
+        bankCast.apply(bank);
+        bankCast.apply(digitalBank);
     }
 }

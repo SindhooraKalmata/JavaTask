@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.Device;
+import com.xworkz.external.casting.DeviceCast;
 import com.xworkz.external.internal.Phone;
 
 public class DeviceRunner {
@@ -32,7 +33,17 @@ public class DeviceRunner {
         device3.track();
         device3.videoCall();
 
+        Phone phone=new Phone();
+        phone.switchOff();
+        phone.call();
+        phone.message();
+        phone.track();
+        phone.playGames();
+        phone.videoCall();
 
+        DeviceCast deviceCast=new DeviceCast();
+    deviceCast.apply(device);
+    deviceCast.apply(phone);
     }
 
 }

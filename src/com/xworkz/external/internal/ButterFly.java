@@ -11,4 +11,32 @@ public class ButterFly extends Insect {
     super();
         System.out.println("No arg const of Butterfly");
     }
+
+    @Override
+    public void age() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void eyeColor() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void legs() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void name() {
+        System.out.println("Running from child");
+    }
+
+    @Override
+    public void wings() {
+        System.out.println("Running from child");
+    }
+    public void flies(){
+        System.out.println("Running from child");
+    }
 }

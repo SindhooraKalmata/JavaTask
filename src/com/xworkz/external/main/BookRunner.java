@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Book;
+import com.xworkz.external.casting.BookCast;
 import com.xworkz.external.internal.StoryBook;
 
 public class BookRunner {
@@ -33,5 +34,15 @@ public class BookRunner {
         book3.copies();
         book3.price();
 
+        StoryBook storyBook=new StoryBook();
+        storyBook.buy();
+        storyBook.colour();
+        storyBook.copies();
+        storyBook.pages();
+        storyBook.price();
+
+        BookCast bookCast=new BookCast();
+        bookCast.apply(book);
+        bookCast.apply(storyBook);
     }
 }

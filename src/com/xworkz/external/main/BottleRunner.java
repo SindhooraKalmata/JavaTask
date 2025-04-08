@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Bottle;
+import com.xworkz.external.casting.BottleCast;
 import com.xworkz.external.internal.WaterBottle;
 
 public class BottleRunner {
@@ -25,5 +26,16 @@ public class BottleRunner {
         bottle3.clean();
         bottle3.close();
         bottle3.carry();
+
+        WaterBottle waterBottle=new WaterBottle();
+        waterBottle.carry();
+        waterBottle.clean();
+        waterBottle.fill();
+        waterBottle.drink();
+        waterBottle.close();
+
+        BottleCast bottleCast=new BottleCast();
+        bottleCast.apply(bottle1);
+        bottleCast.apply(waterBottle);
     }
 }

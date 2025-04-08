@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Cloth;
+import com.xworkz.external.casting.ClothCast;
 import com.xworkz.external.internal.CottonCloth;
 
 public class ClothRunner {
@@ -32,5 +33,11 @@ public class ClothRunner {
         cloth3.colourOfCloth();
         cloth3.measurement();
         cloth3.totalCost();
+
+        CottonCloth cottonCloth=new CottonCloth();
+
+        ClothCast clothCast=new ClothCast();
+        clothCast.apply(cloth);
+        clothCast.apply(cottonCloth);
     }
 }
