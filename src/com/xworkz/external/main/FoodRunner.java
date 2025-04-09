@@ -1,4 +1,5 @@
 package com.xworkz.external.main;
+import com.xworkz.external.casting.FoodCast;
 import com.xworkz.external.internal.VegFood;
 import com.xworkz.external.Food;
 
@@ -31,6 +32,18 @@ public class FoodRunner {
         food3.eat();
         food3.getIngredients();
         food3.store();
+
+        VegFood vegFood=new VegFood();
+        vegFood.share();
+        vegFood.eat();
+        vegFood.getIngredients();
+        vegFood.serve();
+        vegFood.store();
+        vegFood.prepare();
+
+        FoodCast foodCast=new FoodCast();
+        foodCast.apply(food);
+        foodCast.apply(vegFood);
 
     }
 }

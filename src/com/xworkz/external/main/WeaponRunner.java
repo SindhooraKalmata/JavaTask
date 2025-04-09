@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Weapon;
+import com.xworkz.external.casting.WeaponCast;
 import com.xworkz.external.internal.M416;
 
 public class WeaponRunner {
@@ -32,5 +33,17 @@ public class WeaponRunner {
         weapon3.pieces();
         weapon3.weaponName();
         weapon3.Brand();
+
+        M416 m416=new M416();
+        m416.shoot();
+        m416.Brand();
+        m416.weaponName();
+        m416.price();
+        m416.pieces();
+        m416.colour();
+
+        WeaponCast weaponCast=new WeaponCast();
+        weaponCast.apply(weapon);
+        weaponCast.apply(m416);
     }
 }

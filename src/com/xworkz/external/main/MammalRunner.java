@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Mammal;
+import com.xworkz.external.casting.MammalCast;
 import com.xworkz.external.internal.Cow;
 
 public class MammalRunner {
@@ -32,5 +33,17 @@ public class MammalRunner {
         mammal3.breed();
         mammal3.cost();
         mammal3.age();
+
+        Cow cow=new Cow();
+        cow.sounds();
+        cow.age();
+        cow.cost();
+        cow.name();
+        cow.breed();
+        cow.health();
+
+        MammalCast mammalCast=new MammalCast();
+        mammalCast.apply(mammal);
+        mammalCast.apply(cow);
     }
 }

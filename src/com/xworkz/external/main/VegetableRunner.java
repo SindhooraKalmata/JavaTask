@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.Vegetable;
+import com.xworkz.external.casting.VegetableCast;
 import com.xworkz.external.internal.LeafVeg;
 
 public class VegetableRunner {
@@ -31,5 +32,18 @@ public class VegetableRunner {
         vegetable3.nutrients();
         vegetable3.pesticide();
         vegetable3.water();
+
+        LeafVeg leafVeg=new LeafVeg();
+        leafVeg.cultivate();
+        leafVeg.grow();
+        leafVeg.water();
+        leafVeg.harvest();
+        leafVeg.nutrients();
+        leafVeg.growAboveGround();
+        leafVeg.pesticide();
+
+        VegetableCast vegetableCast=new VegetableCast();
+        vegetableCast.apply(vegetable);
+        vegetableCast.apply(leafVeg);
     }
 }

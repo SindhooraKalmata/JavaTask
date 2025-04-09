@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.ElectronicDevice;
+import com.xworkz.external.casting.ElectronicDeviceCast;
 import com.xworkz.external.internal.Smartphone;
 
 public class ElectronicDeviceRunner {
@@ -32,5 +33,17 @@ public class ElectronicDeviceRunner {
         electronicDevice3.brand();
         electronicDevice3.camera();
         electronicDevice3.color();
+
+        Smartphone smartphone=new Smartphone();
+        smartphone.switchOff();
+        smartphone.brand();
+        smartphone.cost();
+        smartphone.color();
+        smartphone.camera();
+        smartphone.storage();
+
+        ElectronicDeviceCast electronicDeviceCast=new ElectronicDeviceCast();
+        electronicDeviceCast.apply(electronicDevice);
+        electronicDeviceCast.apply(smartphone);
     }
 }

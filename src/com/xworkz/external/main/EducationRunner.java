@@ -32,5 +32,7 @@ public class EducationRunner {
         education3.events();
         education3.exams();
         education3.teach();
+
+
     }
 }

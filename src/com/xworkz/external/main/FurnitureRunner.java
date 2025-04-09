@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Furniture;
+import com.xworkz.external.casting.FurnitureCast;
 import com.xworkz.external.internal.Table;
 
 public class FurnitureRunner {
@@ -32,5 +33,17 @@ public class FurnitureRunner {
         furniture3.shape();
         furniture3.cost();
         furniture3.pieces();
+
+        Table table=new Table();
+        table.breaks();
+        table.cost();
+        table.furnitureName();
+        table.wood();
+        table.shape();
+        table.pieces();
+
+        FurnitureCast furnitureCast=new FurnitureCast();
+        furnitureCast.apply(furniture);
+        furnitureCast.apply(table);
     }
 }

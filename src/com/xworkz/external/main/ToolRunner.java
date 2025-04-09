@@ -1,7 +1,9 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Tool;
+import com.xworkz.external.casting.ToolCast;
 import com.xworkz.external.internal.Hammer;
+import com.xworkz.external.internal.Himalaya;
 
 public class ToolRunner {
     public static void main(String[] args) {
@@ -32,5 +34,17 @@ public class ToolRunner {
         tool3.size();
         tool3.cost();
         tool3.pieces();
+
+        Hammer hammer=new Hammer();
+        hammer.beats();
+        hammer.cost();
+        hammer.size();
+        hammer.toolName();
+        hammer.beats();
+        hammer.pieces();
+
+        ToolCast toolCast=new ToolCast();
+        toolCast.apply(tool);
+        toolCast.apply(hammer);
     }
 }

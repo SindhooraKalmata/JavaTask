@@ -1,6 +1,10 @@
 package com.xworkz.external.main;
 
+import com.xworkz.external.Appliance;
 import com.xworkz.external.Jam;
+import com.xworkz.external.casting.JamCast;
+import com.xworkz.external.casting.JuiceCast;
+import com.xworkz.external.internal.AppleJuice;
 import com.xworkz.external.internal.Kissan;
 
 public class JamRunner {
@@ -32,5 +36,17 @@ public class JamRunner {
         jam3.jamColour();
         jam3.jamFlavour();
         jam3.quantity();
+
+        Kissan kissan=new Kissan();
+        kissan.spread();
+        kissan.jamColour();
+        kissan.jamFlavour();
+        kissan.jamName();
+        kissan.totalCost();
+        kissan.quantity();
+
+        JamCast jamCast=new JamCast();
+        jamCast.apply(jam);
+        jamCast.apply(kissan);
     }
 }

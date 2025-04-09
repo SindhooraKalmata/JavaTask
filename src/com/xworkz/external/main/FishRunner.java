@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Fish;
+import com.xworkz.external.casting.FishCast;
 import com.xworkz.external.internal.Shark;
 
 public class FishRunner {
@@ -32,5 +33,17 @@ public class FishRunner {
         fish2.gender();
         fish3.colour();
         fish3.age();
+
+        Shark shark=new Shark();
+        shark.swims();
+        shark.age();
+        shark.colour();
+        shark.gender();
+        shark.height();
+        shark.weight();
+
+        FishCast fishCast=new FishCast();
+        fishCast.apply(fish);
+        fishCast.apply(shark);
     }
 }

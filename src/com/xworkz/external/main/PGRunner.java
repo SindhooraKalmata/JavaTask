@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.PG;
+import com.xworkz.external.casting.PGCast;
 import com.xworkz.external.internal.LuxuryPG;
 
 public class PGRunner {
@@ -32,7 +33,17 @@ public class PGRunner {
         pg3.ensureSecurity();
         pg3.manageRent();
 
+        LuxuryPG luxuryPG=new LuxuryPG();
+        luxuryPG.booking();
+        luxuryPG.ensureSecurity();
+        luxuryPG.manageRent();
+        luxuryPG.offerFood();
+        luxuryPG.provideRoom();
+        luxuryPG.provideWiFi();
 
+        PGCast pgCast=new PGCast();
+        pgCast.apply(pg);
+        pgCast.apply(luxuryPG);
     }
 
 }

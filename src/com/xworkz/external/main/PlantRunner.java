@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Plant;
+import com.xworkz.external.casting.PlantCast;
 import com.xworkz.external.internal.Rose;
 
 public class PlantRunner {
@@ -32,5 +33,16 @@ public class PlantRunner {
         plant3.noOfRoses();
         plant3.age();
         plant3.height();
+
+        Rose rose=new Rose();
+        rose.grows();
+        rose.age();
+        rose.name();
+        rose.height();
+        rose.noOfRoses();
+
+        PlantCast plantCast=new PlantCast();
+        plantCast.apply(plant);
+        plantCast.apply(rose);
     }
 }

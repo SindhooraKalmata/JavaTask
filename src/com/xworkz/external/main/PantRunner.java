@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Pant;
+import com.xworkz.external.casting.PantCast;
 import com.xworkz.external.internal.JeansPant;
 
 public class PantRunner {
@@ -32,5 +33,17 @@ public class PantRunner {
         pant3.pantCost();
         pant3.brand();
         pant3.pantColour();
+
+        JeansPant jeansPant=new JeansPant();
+        jeansPant.wear();
+        jeansPant.pantCost();
+        jeansPant.pantColour();
+        jeansPant.size();
+        jeansPant.brand();
+        jeansPant.clothType();
+
+        PantCast pantCast=new PantCast();
+        pantCast.apply(pant);
+        pantCast.apply(jeansPant);
     }
 }

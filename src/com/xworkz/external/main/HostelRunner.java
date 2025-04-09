@@ -3,6 +3,7 @@ package com.xworkz.external.main;
 import com.xworkz.external.Animal;
 import com.xworkz.external.Hostel;
 import com.xworkz.external.Juice;
+import com.xworkz.external.casting.HostelCast;
 import com.xworkz.external.internal.Horse;
 import com.xworkz.external.internal.Vcvr;
 
@@ -35,5 +36,17 @@ public class HostelRunner {
         hostel3.fees();
         hostel3.floors();
         hostel3.noOfRooms();
+
+        Vcvr vcvr=new Vcvr();
+        vcvr.opens();
+        vcvr.fees();
+        vcvr.Name();
+        vcvr.floors();
+        vcvr.place();
+        vcvr.noOfRooms();
+
+        HostelCast hostelCast=new HostelCast();
+        hostelCast.apply(hostel);
+        hostelCast.apply(vcvr);
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.Earphone;
+import com.xworkz.external.casting.EarPhoneCast;
 import com.xworkz.external.internal.Bluetooth;
 import com.xworkz.external.internal.Wired;
 
@@ -18,5 +19,17 @@ public class EarphoneRunner {
             earphone1.mobile();
             earphone1.device();
             earphone1.share();
+
+        Wired wired=new Wired();
+        wired.disconnect();
+        wired.connect();
+        wired.device();
+        wired.mobile();
+        wired.share();
+        wired.purchase();
+
+            EarPhoneCast earPhoneCast=new EarPhoneCast();
+                earPhoneCast.apply(earphone);
+                earPhoneCast.apply(wired);
         }
     }

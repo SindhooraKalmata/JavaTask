@@ -1,6 +1,8 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Tree;
+import com.xworkz.external.casting.ToolCast;
+import com.xworkz.external.casting.TreeCast;
 import com.xworkz.external.internal.Oak;
 
 public class TreeRunner {
@@ -32,5 +34,17 @@ public class TreeRunner {
         tree3.treeHeight();
         tree3.place();
         tree3.NoOfTrees();
+
+        Oak oak=new Oak();
+        oak.grows();
+        oak.NoOfTrees();
+        oak.treeAge();
+        oak.treeName();
+        oak.grows();
+        oak.place();
+
+        TreeCast treeCast=new TreeCast();
+        treeCast.apply(tree);
+        treeCast.apply(oak);
     }
 }

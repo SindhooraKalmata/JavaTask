@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Juice;
+import com.xworkz.external.casting.JuiceCast;
 import com.xworkz.external.internal.AppleJuice;
 
 public class JuiceRunner {
@@ -32,5 +33,18 @@ public class JuiceRunner {
         juice3.quantity();
         juice3.color();
         juice3.noOfBottle();
+
+        AppleJuice appleJuice=new AppleJuice();
+        appleJuice.drink();
+        appleJuice.cost();
+        appleJuice.color();
+        appleJuice.quantity();
+        appleJuice.totalCost();
+        appleJuice.noOfBottle();
+        appleJuice.quantity();
+
+        JuiceCast juiceCast=new JuiceCast();
+        juiceCast.apply(appleJuice);
+        juiceCast.apply(juice);
     }
 }

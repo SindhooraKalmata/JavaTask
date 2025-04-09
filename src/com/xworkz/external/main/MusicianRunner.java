@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Musician;
+import com.xworkz.external.casting.MusicianCast;
 import com.xworkz.external.internal.CharanRaj;
 
 public class MusicianRunner {
@@ -32,5 +33,17 @@ public class MusicianRunner {
         musician3.name();
         musician3.favSong();
         musician3.noOfMovies();
+
+        CharanRaj charanRaj=new CharanRaj();
+        charanRaj.sings();
+        charanRaj.favSong();
+        charanRaj.name();
+        charanRaj.movie();
+        charanRaj.language();
+        charanRaj.noOfMovies();
+
+        MusicianCast musicianCast=new MusicianCast();
+        musicianCast.apply(musician);
+        musicianCast.apply(charanRaj);
     }
 }

@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Instrument;
+import com.xworkz.external.casting.InstrumentCast;
 import com.xworkz.external.internal.Guitar;
 public class InstrumentRunner {
     public static void main(String[] args) {
@@ -29,5 +30,16 @@ public class InstrumentRunner {
         instrument3.keys();
         instrument3.play();
         instrument3.strings();
+
+        Guitar guitar=new Guitar();
+        guitar.plays();
+        guitar.play();
+        guitar.keys();
+        guitar.cords();
+        guitar.strings();
+
+        InstrumentCast instrumentCast=new InstrumentCast();
+        instrumentCast.apply(instrument);
+        instrumentCast.apply(guitar);
 }
 }

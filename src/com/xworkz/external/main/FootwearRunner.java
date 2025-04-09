@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.FootWear;
+import com.xworkz.external.casting.FootwearCast;
 import com.xworkz.external.internal.Chappal;
 
 public class FootwearRunner {
@@ -32,5 +33,17 @@ public class FootwearRunner {
         footWear3.footwearColour();
         footWear3.footwearType();
         footWear3.brand();
+
+        Chappal chappal=new Chappal();
+        chappal.wear();
+        chappal.cost();
+        chappal.brand();
+        chappal.footwearType();
+        chappal.footwearColour();
+        chappal.material();
+
+        FootwearCast footwearCast=new FootwearCast();
+        footwearCast.apply(footWear);
+        footwearCast.apply(chappal);
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 import com.xworkz.external.Government;
+import com.xworkz.external.casting.GovernmentCast;
 import com.xworkz.external.internal.Democracy;
 
 public class GovernmentRunner {
@@ -33,5 +34,16 @@ public class GovernmentRunner {
         government3.conductElections();
         government3.provideService();
 
+        Democracy democracy=new Democracy();
+        democracy.announce();
+        democracy.collectTaxes();
+        democracy.conductElections();
+        democracy.makeLaws();
+        democracy.enforceLaws();
+        democracy.provideService();
+
+        GovernmentCast governmentCast=new GovernmentCast();
+        governmentCast.apply(government);
+        governmentCast.apply(democracy);
     }
 }

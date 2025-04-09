@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Insect;
+import com.xworkz.external.casting.InsectCast;
 import com.xworkz.external.internal.ButterFly;
 
 public class InsectRunner {
@@ -33,5 +34,17 @@ public class InsectRunner {
         insect3.legs();
         insect3.age();
         insect3.eyeColor();
+
+        ButterFly butterFly=new ButterFly();
+        butterFly.flies();
+        butterFly.age();
+        butterFly.legs();
+        butterFly.name();
+        butterFly.wings();
+        butterFly.eyeColor();
+
+        InsectCast insectCast=new InsectCast();
+        insectCast.apply(insect);
+        insectCast.apply(butterFly);
     }
 }

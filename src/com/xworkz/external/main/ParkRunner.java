@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Park;
+import com.xworkz.external.casting.ParkCast;
 import com.xworkz.external.internal.ChildrenPark;
 
 public class ParkRunner {
@@ -32,5 +33,17 @@ public class ParkRunner {
         park3.maintainGreenery();
         park3.provideSeatingArea();
         park3.closePark();
+
+        ChildrenPark childrenPark=new ChildrenPark();
+        childrenPark.watering();
+        childrenPark.closePark();
+        childrenPark.openPark();
+        childrenPark.maintainGreenery();
+        childrenPark.provideSeatingArea();
+        childrenPark.provideWalkingTrack();
+
+        ParkCast parkCast=new ParkCast();
+        parkCast.apply(park);
+        parkCast.apply(childrenPark);
     }
 }

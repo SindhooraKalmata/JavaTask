@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Student;
+import com.xworkz.external.casting.StudentCast;
 import com.xworkz.external.internal.Sindhu;
 
 public class StudentRunner {
@@ -32,5 +33,16 @@ public class StudentRunner {
         student3.collage();
         student3.city();
         student3.branch();
+
+        Sindhu sindhu=new Sindhu();
+        sindhu.attend();
+        student.usn();
+        sindhu.city();
+        sindhu.name();
+        sindhu.collage();
+
+        StudentCast studentCast=new StudentCast();
+        studentCast.apply(student);
+        studentCast.apply(sindhu);
     }
 }

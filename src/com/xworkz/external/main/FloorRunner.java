@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Floor;
+import com.xworkz.external.casting.FloorCast;
 import com.xworkz.external.internal.Granite;
 
 public class FloorRunner {
@@ -32,5 +33,17 @@ public class FloorRunner {
         floor3.noOfGranite();
         floor3.floorColour();
         floor3.flooringShop();
+
+        Granite granite=new Granite();
+        granite.breaks();
+        granite.floorColour();
+        granite.flooringShop();
+        granite.floorType();
+        granite.noOfGranite();
+        granite.pricePerFeet();
+
+        FloorCast floorCast=new FloorCast();
+        floorCast.apply(floor);
+        floorCast.apply(granite);
     }
 }

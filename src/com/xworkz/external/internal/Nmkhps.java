@@ -32,11 +32,7 @@ public class Nmkhps  extends School {
     public void place() {
         System.out.println("Running from child");
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        System.out.println("Running from child");
-    }
+    
     public void opens(){
         System.out.println("Running from child");
     }

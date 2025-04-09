@@ -2,7 +2,8 @@ package com.xworkz.external.main;
 
 
     import com.xworkz.external.Home;
-import com.xworkz.external.internal.Apartment;
+    import com.xworkz.external.casting.HomeCast;
+    import com.xworkz.external.internal.Apartment;
 
     public class HomeRunner {
         
@@ -34,6 +35,18 @@ import com.xworkz.external.internal.Apartment;
             home3.hasKitchen();
             home3.hasGarden();
             home3.secureDoors();
+
+            Apartment apartment=new Apartment();
+            apartment.payRent();
+            apartment.hasGarden();
+            apartment.hasKitchen();
+            apartment.hasRooms();
+            apartment.provideShelter();
+            apartment.secureDoors();
+
+            HomeCast homeCast=new HomeCast();
+            homeCast.apply(home);
+            homeCast.apply(apartment);
 
         }
     }

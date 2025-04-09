@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Seminar;
+import com.xworkz.external.casting.SeminarCast;
 import com.xworkz.external.internal.Techy;
 
 public class SeminarRunner {
@@ -32,5 +33,17 @@ public class SeminarRunner {
         seminar3.date();
         seminar3.student();
         seminar3.schedule();
+
+        Techy techy=new Techy();
+        techy.prepare();
+        techy.date();
+        techy.time();
+        techy.topic();
+        techy.student();
+        techy.schedule();
+
+        SeminarCast seminarCast=new SeminarCast();
+        seminarCast.apply(seminar);
+        seminarCast.apply(techy);
     }
 }

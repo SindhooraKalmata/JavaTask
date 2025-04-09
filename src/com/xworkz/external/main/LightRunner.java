@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Light;
+import com.xworkz.external.casting.LightCast;
 import com.xworkz.external.internal.Bulb;
 
 public class LightRunner {
@@ -32,5 +33,17 @@ public class LightRunner {
         light3.colour();
         light3.cost();
         light3.totalCost();
+
+        Bulb bulb=new Bulb();
+        bulb.breaks();
+        bulb.cost();
+        bulb.colour();
+        bulb.totalCost();
+        bulb.size();
+        bulb.totalCost();
+
+        LightCast lightCast=new LightCast();
+        lightCast.apply(light);
+        lightCast.apply(bulb);
     }
 }

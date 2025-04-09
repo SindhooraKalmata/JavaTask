@@ -1,6 +1,7 @@
 package com.xworkz.external.main;
 
 import com.xworkz.external.Moisturiser;
+import com.xworkz.external.casting.MoisturizerCast;
 import com.xworkz.external.internal.Himalaya;
 
 public class MoisturiserRunner {
@@ -32,5 +33,17 @@ public class MoisturiserRunner {
         moisturiser3.cost();
         moisturiser3.name();
         moisturiser3.nourish();
+
+        Himalaya himalaya=new Himalaya();
+        himalaya.apply();
+        himalaya.cost();
+        himalaya.name();
+        himalaya.piece();
+        himalaya.nourish();
+        himalaya.quantity();
+
+        MoisturizerCast moisturizerCast=new MoisturizerCast();
+        moisturizerCast.apply(moisturiser);
+        moisturizerCast.apply(himalaya);
     }
 }

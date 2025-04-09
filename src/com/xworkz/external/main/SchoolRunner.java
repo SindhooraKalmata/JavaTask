@@ -1,5 +1,6 @@
 package com.xworkz.external.main;
 
+import com.xworkz.external.casting.SchoolCast;
 import com.xworkz.external.internal.Nmkhps;
 import com.xworkz.external.School;
 
@@ -26,6 +27,16 @@ public class SchoolRunner {
        school2.name();
        school2.place();
 
+        Nmkhps nmkhps=new Nmkhps();
+        nmkhps.opens();
+        nmkhps.color();
+        nmkhps.fees();
+        nmkhps.name();
+        nmkhps.place();
+        nmkhps.District();
 
+        SchoolCast schoolCast=new SchoolCast();
+        schoolCast.apply(school);
+        schoolCast.apply(nmkhps);
     }
 }
